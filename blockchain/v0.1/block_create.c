@@ -14,3 +14,6 @@ block_t *block;
 time_t t;
 int i;
 uint32_t max_len = data_len > BLOCKCHAIN_DATA_MAX ?
+BLOCKCHAIN_DATA_MAX : data_len;
+if (prev == NULL)
+retur
