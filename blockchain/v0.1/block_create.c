@@ -19,4 +19,5 @@ if (prev == NULL)
 return (NULL);
 if (data == NULL)
 return (NULL);
-block = (block_t *
+block = (block_t *)malloc(sizeof(block_t));
+block->info.index = (uint32_t)((int)(prev->i
