@@ -23,4 +23,5 @@ block = (block_t *)malloc(sizeof(block_t));
 block->info.index = (uint32_t)((int)(prev->info.index) + 1);
 block->info.difficulty = 0;
 t = time(0);
-block->info.
+block->info.timestamp = (uint64_t)&t;
+block->info.nonce = 0;
