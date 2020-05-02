@@ -34,4 +34,7 @@ for (i = 0; i < (int)max_len; i++)
 block->data.buffer[i] = data[i];
 }
 block->data.len = max_len;
-for (i = 0; i 
+for (i = 0; i < SHA256_DIGEST_LENGTH; i++)
+{
+block->hash[i] = 0;
+block->info.prev_hash[i
