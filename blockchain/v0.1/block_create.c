@@ -25,3 +25,6 @@ block->info.difficulty = 0;
 t = time(0);
 block->info.timestamp = (uint64_t)&t;
 block->info.nonce = 0;
+for (i = 0; i < BLOCKCHAIN_DATA_MAX; i++)
+{
+block->data.buffe
