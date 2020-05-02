@@ -27,4 +27,8 @@ block->info.timestamp = (uint64_t)&t;
 block->info.nonce = 0;
 for (i = 0; i < BLOCKCHAIN_DATA_MAX; i++)
 {
-block->data.buffe
+block->data.buffer[i] = 0;
+}
+for (i = 0; i < (int)max_len; i++)
+{
+block->data.bu
