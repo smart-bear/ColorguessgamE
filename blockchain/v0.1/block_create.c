@@ -31,4 +31,7 @@ block->data.buffer[i] = 0;
 }
 for (i = 0; i < (int)max_len; i++)
 {
-block->data.bu
+block->data.buffer[i] = data[i];
+}
+block->data.len = max_len;
+for (i = 0; i 
