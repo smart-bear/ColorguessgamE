@@ -37,4 +37,8 @@ block->data.len = max_len;
 for (i = 0; i < SHA256_DIGEST_LENGTH; i++)
 {
 block->hash[i] = 0;
-block->info.prev_hash[i
+block->info.prev_hash[i] = prev->hash[i];
+}
+return (block);
+}
+
