@@ -2,4 +2,6 @@
 
 /**
  * block_destroy - frees a block
- * @bloc
+ * @block: pointer to block to free
+ */
+void block_destroy(block_t *blo
