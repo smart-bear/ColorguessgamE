@@ -5,4 +5,5 @@ uint8_t *block_hash(block_t const *block,
 {
 memset(hash_buf, 0, SHA256_DIGEST_LENGTH);
 return (SHA256((const unsigned char *)block,
-	       sizeof(block->i
+	       sizeof(block->info) + block->data.len, hash_buf));
+}
