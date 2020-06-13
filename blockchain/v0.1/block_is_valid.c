@@ -13,4 +13,5 @@ block_t const _genesis = GENESIS_BLOCK;
 if (!block || (!prev_block && block->info.index != 0))
 return (1);
 if (block->info.index == 0)
-return (memcmp(block, &_genesis, si
+return (memcmp(block, &_genesis, sizeof(_genesis)));
+if (block->info.index != prev_block->inf
