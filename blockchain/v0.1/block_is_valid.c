@@ -24,4 +24,5 @@ return (1);
 if (!block_hash(block, hash_buf) ||
 memcmp(hash_buf, block->hash, SHA256_DIGEST_LENGTH))
 return (1);
-i
+if (block->data.len > BLOCKCHAIN_DATA_MAX)
+return (1)
