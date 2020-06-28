@@ -5,4 +5,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <llist.h>
-#include 
+#include <openssl/sha.h>
+#include "../../crypto/hblk_crypto.h"
+
+#define B
