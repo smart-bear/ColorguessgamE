@@ -8,4 +8,8 @@
 #include <openssl/sha.h>
 #include "../../crypto/hblk_crypto.h"
 
-#define B
+#define BLOCKCHAIN_DATA_MAX 1024
+#define UNUSED(x) (void)(x)
+
+
+#define 
