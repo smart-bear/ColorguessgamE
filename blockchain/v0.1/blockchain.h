@@ -12,4 +12,7 @@
 #define UNUSED(x) (void)(x)
 
 
-#define 
+#define GENESIS_BLOCK { \
+{ /* info */ \
+0 /* index */, \
+0, /* 
