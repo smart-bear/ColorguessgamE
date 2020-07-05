@@ -15,4 +15,6 @@
 #define GENESIS_BLOCK { \
 { /* info */ \
 0 /* index */, \
-0, /* 
+0, /* difficulty */ \
+1537578000, /* timestamp */ \
+0, /* nonce */
