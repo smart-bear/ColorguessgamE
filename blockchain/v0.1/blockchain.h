@@ -17,4 +17,8 @@
 0 /* index */, \
 0, /* difficulty */ \
 1537578000, /* timestamp */ \
-0, /* nonce */
+0, /* nonce */ \
+{0} /* prev_hash */ \
+}, \
+{ /* data */ \
+"Holberton School"
