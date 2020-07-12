@@ -28,4 +28,9 @@
 "\x0c\x8e\x00\x09\xc8\x17\xf2\xb1\xd3\xd7\xff\x2f\x04\x51\x58\x03" \
 }
 
-typedef stru
+typedef struct blockchain_s
+{
+llist_t     *chain;
+} blockchain_t;
+
+typedef struct b
