@@ -33,4 +33,8 @@ typedef struct blockchain_s
 llist_t     *chain;
 } blockchain_t;
 
-typedef struct b
+typedef struct block_info_s
+{
+uint32_t    index;
+uint32_t    difficulty;
+uint64_t   
