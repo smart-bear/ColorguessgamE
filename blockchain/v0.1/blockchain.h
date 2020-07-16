@@ -39,4 +39,8 @@ uint32_t    index;
 uint32_t    difficulty;
 uint64_t    timestamp;
 uint64_t    nonce;
-uint8_t     prev_hash[SHA25
+uint8_t     prev_hash[SHA256_DIGEST_LENGTH];
+
+} block_info_t;
+
+typedef struct blo
