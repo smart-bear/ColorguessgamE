@@ -62,4 +62,6 @@ extern block_t const _genesis;
 
 blockchain_t *blockchain_create(void);
 
-void _bl
+void _blockchain_print(blockchain_t const *blockchain);
+
+void _blockchai
