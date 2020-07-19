@@ -52,3 +52,6 @@ uint32_t    len;
 
 typedef struct block_s
 {
+block_info_t    info;
+block_data_t    data;
+uint8_t     
