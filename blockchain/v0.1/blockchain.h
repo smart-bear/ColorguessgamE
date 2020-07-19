@@ -46,4 +46,9 @@ uint8_t     prev_hash[SHA256_DIGEST_LENGTH];
 typedef struct block_data_s
 {
 int8_t      buffer[BLOCKCHAIN_DATA_MAX];
-uint32
+uint32_t    len;
+
+} block_data_t;
+
+typedef struct block_s
+{
