@@ -58,4 +58,8 @@ uint8_t     hash[SHA256_DIGEST_LENGTH];
 
 } block_t;
 
-extern block_t 
+extern block_t const _genesis;
+
+blockchain_t *blockchain_create(void);
+
+void _bl
