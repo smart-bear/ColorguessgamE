@@ -64,4 +64,6 @@ blockchain_t *blockchain_create(void);
 
 void _blockchain_print(blockchain_t const *blockchain);
 
-void _blockchai
+void _blockchain_destroy(blockchain_t *blockchain);
+
+block_t *bl
