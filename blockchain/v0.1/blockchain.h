@@ -66,4 +66,8 @@ void _blockchain_print(blockchain_t const *blockchain);
 
 void _blockchain_destroy(blockchain_t *blockchain);
 
-block_t *block_create(block_t const *prev, int8_t const *data, uint32
+block_t *block_create(block_t const *prev, int8_t const *data, uint32_t data_len);
+
+void block_destroy(block_t *block);
+
+void bl
