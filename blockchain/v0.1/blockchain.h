@@ -74,4 +74,6 @@ void blockchain_destroy(blockchain_t *blockchain);
 
 uint8_t *block_hash(block_t const *block, uint8_t hash_buf[SHA256_DIGEST_LENGTH]);
 
-int blockchain_serialize(blockchain_t co
+int blockchain_serialize(blockchain_t const *blockchain, char const *path);
+
+uint8_t _get_end
