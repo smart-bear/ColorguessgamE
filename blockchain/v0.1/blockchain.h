@@ -76,4 +76,8 @@ uint8_t *block_hash(block_t const *block, uint8_t hash_buf[SHA256_DIGEST_LENGTH]
 
 int blockchain_serialize(blockchain_t const *blockchain, char const *path);
 
-uint8_t _get_end
+uint8_t _get_endianness(void);
+
+void _swap_endian(void *p, size_t size);
+
+bl
