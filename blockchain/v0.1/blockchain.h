@@ -80,4 +80,4 @@ uint8_t _get_endianness(void);
 
 void _swap_endian(void *p, size_t size);
 
-bl
+blockchain_t *blockchain_deserialize(char const
