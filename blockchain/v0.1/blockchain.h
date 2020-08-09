@@ -80,4 +80,6 @@ uint8_t _get_endianness(void);
 
 void _swap_endian(void *p, size_t size);
 
-blockchain_t *blockchain_deserialize(char const
+blockchain_t *blockchain_deserialize(char const *path);
+
+int block_is_valid(block_t const *block, block_t 
