@@ -2,4 +2,6 @@
 
 /**
  * convert_endianness - Convert data of a block
- * @block: block to 
+ * @block: block to be converted
+ */
+void convert_endianness(block_t *b
