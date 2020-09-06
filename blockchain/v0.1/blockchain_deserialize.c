@@ -15,4 +15,5 @@ _swap_endian(&block->info.nonce, sizeof(block->info.nonce));
  * read_blocks - deserializes blockchain from file
  * @fp: file that contains blockchain data
  * @swap_endian: pointer to data to be converted
- * @blockchain: the blockchain that will contai
+ * @blockchain: the blockchain that will contain the blockchain
+ * @size: the size of the b
