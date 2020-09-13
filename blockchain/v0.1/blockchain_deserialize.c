@@ -20,4 +20,8 @@ _swap_endian(&block->info.nonce, sizeof(block->info.nonce));
  * Return: pointer to deserialized blockchain or null
  */
 int read_blocks(FILE *fp, uint8_t swap_endian,
-		blockchain_t *blockchai
+		blockchain_t *blockchain, int size)
+{
+int i;
+block_t *block;
+uint32_
