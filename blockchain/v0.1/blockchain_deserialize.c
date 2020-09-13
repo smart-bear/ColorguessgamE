@@ -19,4 +19,5 @@ _swap_endian(&block->info.nonce, sizeof(block->info.nonce));
  * @size: the size of the blockchain
  * Return: pointer to deserialized blockchain or null
  */
-int read_bl
+int read_blocks(FILE *fp, uint8_t swap_endian,
+		blockchain_t *blockchai
