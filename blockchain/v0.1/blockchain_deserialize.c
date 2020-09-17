@@ -26,4 +26,5 @@ int i;
 block_t *block;
 uint32_t data_len;
 long int genesis_size;
-genesis_size = sizeof(block->info
+genesis_size = sizeof(block->info) + sizeof(block->hash) + 20L;
+fseek(fp, genesis_size, SEEK_
