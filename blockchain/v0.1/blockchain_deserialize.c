@@ -24,4 +24,6 @@ int read_blocks(FILE *fp, uint8_t swap_endian,
 {
 int i;
 block_t *block;
-uint32_
+uint32_t data_len;
+long int genesis_size;
+genesis_size = sizeof(block->info
