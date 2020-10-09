@@ -34,4 +34,6 @@ block = malloc(sizeof(*block));
 if (!block)
 return (-1);
 fread(&block->info, sizeof(block->info), 1, fp);
-fread(&data_len, sizeof(d
+fread(&data_len, sizeof(data_len), 1, fp);
+if (swap_endian)
+_swap_endian(&data_len, s
