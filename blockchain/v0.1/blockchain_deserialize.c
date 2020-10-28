@@ -53,4 +53,8 @@ return (0);
  * @path: path to serialized blockchain file
  * Return: pointer to deserialized blockchain or null
  */
-blockchain_t *blockchain_deserialize(char 
+blockchain_t *blockchain_deserialize(char const *path)
+{
+FILE *fp;
+uint8_t hblk_magic[4];
+uint8_t hblk_v
