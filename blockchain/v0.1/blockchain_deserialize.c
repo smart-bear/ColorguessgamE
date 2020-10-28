@@ -60,4 +60,8 @@ uint8_t hblk_magic[4];
 uint8_t hblk_version[3];
 uint8_t hblk_endian;
 int32_t hblk_blocks;
-blockchain_t
+blockchain_t *blockchain;
+int size;
+uint8_t swap_endian;
+if (!path)
+return (NUL
