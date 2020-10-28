@@ -51,4 +51,6 @@ return (0);
 /**
  * blockchain_deserialize - deserializes blockchain from file
  * @path: path to serialized blockchain file
- * Return: pointer to deserialized blockchain 
+ * Return: pointer to deserialized blockchain or null
+ */
+blockchain_t *blockchain_deserialize(char 
