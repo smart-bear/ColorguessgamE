@@ -57,4 +57,7 @@ blockchain_t *blockchain_deserialize(char const *path)
 {
 FILE *fp;
 uint8_t hblk_magic[4];
-uint8_t hblk_v
+uint8_t hblk_version[3];
+uint8_t hblk_endian;
+int32_t hblk_blocks;
+blockchain_t
