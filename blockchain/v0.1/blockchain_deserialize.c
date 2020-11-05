@@ -64,4 +64,8 @@ blockchain_t *blockchain;
 int size;
 uint8_t swap_endian;
 if (!path)
-return (NUL
+return (NULL);
+fp = fopen(path, "r");
+if (!fp)
+return (NULL);
+fread(&hblk_magic, size
