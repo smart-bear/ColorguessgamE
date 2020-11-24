@@ -71,4 +71,5 @@ return (NULL);
 fread(&hblk_magic, sizeof(hblk_magic), 1, fp);
 fread(&hblk_version, sizeof(hblk_version), 1, fp);
 fread(&hblk_endian, sizeof(hblk_endian), 1, fp);
-fread(&hbl
+fread(&hblk_blocks, sizeof(hblk_blocks), 1, fp);
+if (
