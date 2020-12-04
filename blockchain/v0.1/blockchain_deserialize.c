@@ -74,4 +74,6 @@ fread(&hblk_endian, sizeof(hblk_endian), 1, fp);
 fread(&hblk_blocks, sizeof(hblk_blocks), 1, fp);
 if (memcmp(hblk_magic, "HBLK", 4) ||
 memcmp(hblk_version, "0.1", 3))
-return (fcl
+return (fclose(fp), NULL);
+blockchain = blockchain_create();
+if (!b
