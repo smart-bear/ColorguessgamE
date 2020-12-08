@@ -76,4 +76,6 @@ if (memcmp(hblk_magic, "HBLK", 4) ||
 memcmp(hblk_version, "0.1", 3))
 return (fclose(fp), NULL);
 blockchain = blockchain_create();
-if (!b
+if (!blockchain)
+return (fclose(fp), NULL);
+swap_endian = _get_endiann
