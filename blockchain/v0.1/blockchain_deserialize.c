@@ -80,4 +80,6 @@ if (!blockchain)
 return (fclose(fp), NULL);
 swap_endian = _get_endianness() != hblk_endian;
 size = hblk_blocks;
-if (swa
+if (swap_endian)
+_swap_endian(&size, sizeof(size));
+if (read_blocks(
