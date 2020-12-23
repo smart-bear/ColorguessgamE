@@ -84,4 +84,7 @@ if (swap_endian)
 _swap_endian(&size, sizeof(size));
 if (read_blocks(fp, swap_endian, blockchain, size) == -1)
 return (blockchain_destroy(blockchain), fclose(fp), NULL);
-fclose(
+fclose(fp);
+return (blockchain);
+}
+
