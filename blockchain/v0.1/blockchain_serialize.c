@@ -4,4 +4,7 @@
  * write_block - a function that serializes a Blockchain into a file
  * @ptr: pointer to the block to be serialized
  * @idx: index of the parameter
- * @arg: The file in which the data will be wri
+ * @arg: The file in which the data will be written
+ * Return: 0 upon success, or -1 upon failure
+ */
+int 
