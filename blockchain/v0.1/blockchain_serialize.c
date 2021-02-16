@@ -13,4 +13,5 @@ FILE *fp;
 block_t *block = ptr;
 UNUSED(idx);
 fp = (FILE *)arg;
-fwrite((void *)&block->info, sizeof(block->info), 1
+fwrite((void *)&block->info, sizeof(block->info), 1, fp);
+fwrite((void *)&block->data.len, sizeof(block->
