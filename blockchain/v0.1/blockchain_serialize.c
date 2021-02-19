@@ -17,4 +17,8 @@ fwrite((void *)&block->info, sizeof(block->info), 1, fp);
 fwrite((void *)&block->data.len, sizeof(block->data.len), 1, fp);
 fwrite(block->data.buffer, block->data.len, 1, fp);
 fwrite(block->hash, sizeof(block->hash), 1, fp);
-return
+return (0);
+}
+
+/**
+ * blockchain_serialize - a function that seria
