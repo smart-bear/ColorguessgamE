@@ -21,4 +21,5 @@ return (0);
 }
 
 /**
- * blockchain_serialize - a function that seria
+ * blockchain_serialize - a function that serializes a Blockchain into a file
+ * @blockchain: pointer to blockchain to be seri
