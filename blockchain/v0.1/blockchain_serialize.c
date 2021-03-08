@@ -23,4 +23,6 @@ return (0);
 /**
  * blockchain_serialize - a function that serializes a Blockchain into a file
  * @blockchain: pointer to blockchain to be serialized
- * @path: the path to a file to serialize the Blockch
+ * @path: the path to a file to serialize the Blockchain into
+ *
+ * Return: 0 upon success, or -1 upon f
