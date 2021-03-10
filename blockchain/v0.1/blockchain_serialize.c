@@ -28,4 +28,8 @@ return (0);
  * Return: 0 upon success, or -1 upon failure
  */
 
-int blockchain_serialize(blockchain_t const *blockch
+int blockchain_serialize(blockchain_t const *blockchain,
+			 char const *path)
+{
+uint8_t hblk_magic[4];
+u
