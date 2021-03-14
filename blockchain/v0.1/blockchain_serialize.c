@@ -35,3 +35,7 @@ uint8_t hblk_magic[4];
 uint8_t hblk_version[3];
 uint8_t hblk_endian;
 int32_t hblk_blocks;
+FILE *fp;
+if (!blockchain || !path)
+return (-1);
+memcpy(hblk_magic,
