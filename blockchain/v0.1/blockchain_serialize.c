@@ -38,4 +38,6 @@ int32_t hblk_blocks;
 FILE *fp;
 if (!blockchain || !path)
 return (-1);
-memcpy(hblk_magic,
+memcpy(hblk_magic, "HBLK", 4);
+memcpy(hblk_version, "0.1", 3);
+hblk_endian = _get_endia
