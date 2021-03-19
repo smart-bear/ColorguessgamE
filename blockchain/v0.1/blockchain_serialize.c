@@ -44,4 +44,7 @@ hblk_endian = _get_endianness();
 hblk_blocks = llist_size(blockchain->chain);
 if (hblk_blocks == -1)
 return (-1);
-fp = fopen(path, "w"
+fp = fopen(path, "w");
+if (!fp)
+return (-1);
+fwrite(&hblk_magic, sizeof(hblk_magic
