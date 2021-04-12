@@ -110,3 +110,33 @@ static void _print_hex_buffer(uint8_t const *buf, size_t len)
   *
   * @blockchain: Pointer to the Blockchain to be printed
   */
+ void _blockchain_print(blockchain_t const *blockchain)
+ {
+   printf("Blockchain: {\n");
+
+   printf("\tchain [%d]: [\n", llist_size(blockchain->chain));
+   llist_for_each(blockchain->chain,
+		  (node_func_t)_block_print, "\t\t");
+   printf("\t]\n");
+
+   printf("}\n");
+   fflush(NULL);
+ }
+
+ /**
+  * _blockchain_print_brief - Prints an entire Blockchain (brief mode)
+  *
+  * @blockchain: Pointer to the Blockchain to be printed
+  */
+ void _blockchain_print_brief(blockchain_t const *blockchain)
+ {
+   printf("Blockchain: {\n");
+
+   printf("\tchain [%d]: [\n", llist_size(blockchain->chain));
+   llist_for_each(blockchain->chain,
+		  (node_func_t)_block_print_brief, "\t\t");
+   printf("\t]\n");
+
+   printf("}\n");
+   fflush(NULL);
+ }
