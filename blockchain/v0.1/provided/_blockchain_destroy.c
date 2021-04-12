@@ -4,3 +4,8 @@
 
 
 void _blockchain_destroy(blockchain_t *blockchain)
+{
+	if (!blockchain)
+		return;
+
+	llist_d
