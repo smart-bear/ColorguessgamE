@@ -1,3 +1,6 @@
 #include <stdlib.h>
 
-#in
+#include "blockchain.h"
+
+
+void _blockchain_destroy(blockchain_t *blockchain)
