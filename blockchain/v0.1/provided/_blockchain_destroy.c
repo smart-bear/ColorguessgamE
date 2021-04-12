@@ -8,4 +8,6 @@ void _blockchain_destroy(blockchain_t *blockchain)
 	if (!blockchain)
 		return;
 
-	llist_d
+	llist_destroy(blockchain->chain, 1, (node_dtor_t)free);
+
+	free(bl
