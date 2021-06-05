@@ -1,4 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#incl
+#include "blockchain.h"
+
+/**
+ * main - Entry point
+ *
+ * Return: EXIT_S
