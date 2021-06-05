@@ -14,4 +14,6 @@ blockchain_t *blockchain;
 block_t *first, *block;
 
 blockchain = blockchain_create();
-first = l
+first = llist_get_head(blockchain->chain);
+
+block = block_create(firs
