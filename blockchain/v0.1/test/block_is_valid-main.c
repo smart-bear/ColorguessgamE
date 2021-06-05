@@ -16,4 +16,5 @@ block_t *first, *block;
 blockchain = blockchain_create();
 first = llist_get_head(blockchain->chain);
 
-block = block_create(firs
+block = block_create(first, (int8_t *)"Holberton", 9);
+block_hash(block, block->hash);
