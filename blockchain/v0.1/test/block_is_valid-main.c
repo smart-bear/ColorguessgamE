@@ -11,3 +11,7 @@
 int main(void)
 {
 blockchain_t *blockchain;
+block_t *first, *block;
+
+blockchain = blockchain_create();
+first = l
