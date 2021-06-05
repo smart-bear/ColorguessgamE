@@ -24,3 +24,8 @@ if (block_is_valid(first, NULL) != 0 ||
 block_is_valid(block, first) != 0)
 {
 fprintf(stderr, "Block invalid\n");
+return (EXIT_FAILURE);
+}
+printf("Block is valid\n");
+
+blockchain_des
