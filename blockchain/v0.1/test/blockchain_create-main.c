@@ -3,4 +3,6 @@
 #include <string.h>
 #include <llist.h>
 
-#include 
+#include "blockchain.h"
+
+void _blockchain_print(blockchain_t const *bloc
