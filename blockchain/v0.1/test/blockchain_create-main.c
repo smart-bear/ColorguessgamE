@@ -24,4 +24,6 @@ _blockchain_print(blockchain);
 
 blockchain2 = blockchain_create();
 if (memcmp(llist_get_head(blockchain->chain),
-ll
+llist_get_head(blockchain2->chain), sizeof(block_t)) != 0)
+{
+fprin
