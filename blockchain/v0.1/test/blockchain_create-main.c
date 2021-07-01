@@ -20,4 +20,6 @@ blockchain_t *blockchain2;
 
 blockchain = blockchain_create();
 
-_blockcha
+_blockchain_print(blockchain);
+
+blockchain2 = blockchain_cre
