@@ -22,4 +22,6 @@ blockchain = blockchain_create();
 
 _blockchain_print(blockchain);
 
-blockchain2 = blockchain_cre
+blockchain2 = blockchain_create();
+if (memcmp(llist_get_head(blockchain->chain),
+ll
