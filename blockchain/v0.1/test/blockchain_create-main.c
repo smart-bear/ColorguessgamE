@@ -16,4 +16,8 @@ void _blockchain_destroy(blockchain_t *blockchain);
 int main(void)
 {
 blockchain_t *blockchain;
-blockchain_t *
+blockchain_t *blockchain2;
+
+blockchain = blockchain_create();
+
+_blockcha
