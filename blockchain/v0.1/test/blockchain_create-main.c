@@ -11,4 +11,9 @@ void _blockchain_destroy(blockchain_t *blockchain);
 /**
  * main - Entry point
  *
- * Return: EXIT_SUCCESS or EXIT_FAILU
+ * Return: EXIT_SUCCESS or EXIT_FAILURE
+ */
+int main(void)
+{
+blockchain_t *blockchain;
+blockchain_t *
