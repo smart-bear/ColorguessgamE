@@ -26,4 +26,4 @@ blockchain2 = blockchain_create();
 if (memcmp(llist_get_head(blockchain->chain),
 llist_get_head(blockchain2->chain), sizeof(block_t)) != 0)
 {
-fprin
+fprintf(stderr, "Genesis Block should always be the same\n"
