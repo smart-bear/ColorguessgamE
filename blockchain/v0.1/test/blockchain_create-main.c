@@ -32,4 +32,7 @@ _blockchain_destroy(blockchain2);
 return (EXIT_FAILURE);
 }
 
-_blockchain_destroy(blo
+_blockchain_destroy(blockchain);
+_blockchain_destroy(blockchain2);
+
+return (EXIT_SUCCESS);
