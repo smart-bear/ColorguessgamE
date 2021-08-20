@@ -13,4 +13,6 @@ void _blockchain_print_brief(blockchain_t const *blockchain);
  */
 int main(void)
 {
-b
+blockchain_t *blockchain;
+
+blockchain = blockchain_deserialize
