@@ -17,4 +17,7 @@ blockchain_t *blockchain;
 
 blockchain = blockchain_deserialize("save.hblk");
 
-_blockchain_print_brief(blockchai
+_blockchain_print_brief(blockchain);
+blockchain_destroy(blockchain);
+
+return (EXIT_S
