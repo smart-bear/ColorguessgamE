@@ -5,4 +5,6 @@
 #include "blockchain.h"
 
 /**
- * main 
+ * main - Entry point
+ *
+ * Return: EXIT_SUCCESS or EXIT_FAI
