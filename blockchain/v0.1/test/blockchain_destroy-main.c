@@ -1,3 +1,8 @@
 #include <stdlib.h>
 #include <stdio.h>
-#incl
+#include <string.h>
+
+#include "blockchain.h"
+
+/**
+ * main 
