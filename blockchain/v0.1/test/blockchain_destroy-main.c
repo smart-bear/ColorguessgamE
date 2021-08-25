@@ -7,4 +7,9 @@
 /**
  * main - Entry point
  *
- * Return: EXIT_SUCCESS or EXIT_FAI
+ * Return: EXIT_SUCCESS or EXIT_FAILURE
+ */
+int main(void)
+{
+blockchain_t *blockchain;
+bloc
