@@ -18,4 +18,5 @@ blockchain = blockchain_create();
 block = llist_get_head(blockchain->chain);
 
 block = block_create(block, (int8_t *)"Holberton", 9);
-llist_add_node(blockchain->chain, blo
+llist_add_node(blockchain->chain, block, ADD_NODE_REAR);
+block = block_create(block, (int8_t *)"S
