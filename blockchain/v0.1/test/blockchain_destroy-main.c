@@ -23,4 +23,5 @@ block = block_create(block, (int8_t *)"School", 6);
 llist_add_node(blockchain->chain, block, ADD_NODE_REAR);
 block = block_create(block, (int8_t *)"of", 2);
 llist_add_node(blockchain->chain, block, ADD_NODE_REAR);
-block = blo
+block = block_create(block, (int8_t *)"Software", 8);
+llist_add
