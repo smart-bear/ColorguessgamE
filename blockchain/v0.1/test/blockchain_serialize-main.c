@@ -32,3 +32,5 @@ llist_add_node(blockchain->chain, block, ADD_NODE_REAR);
 block = block_create(block, (int8_t *)"Engineering", 11);
 block_hash(block, block->hash);
 llist_add_node(blockchain->chain, block, ADD_NODE_REAR);
+
+blockchain_serialize(blockchain, "save.hblk")
