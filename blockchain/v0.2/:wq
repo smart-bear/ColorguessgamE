@@ -4,3 +4,6 @@ static uint32_t compute_difficulty(uint8_t const hash[SHA256_DIGEST_LENGTH])
 {
 	const uint8_t *ptr = hash;
 	uint32_t difficulty = 0;
+	int i = 0;
+
+	while (ptr < hash + SHA256_DIGEST_LENGTH)
