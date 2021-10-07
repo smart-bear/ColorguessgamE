@@ -1,3 +1,6 @@
 #include "blockchain.h"
 
-static uint32_t compute_difficulty(uint8_t const hash[SHA256_DIGEST_LENGT
+static uint32_t compute_difficulty(uint8_t const hash[SHA256_DIGEST_LENGTH])
+{
+	const uint8_t *ptr = hash;
+	uint32_t difficulty = 0;
