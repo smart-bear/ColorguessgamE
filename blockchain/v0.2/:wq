@@ -16,4 +16,8 @@ static uint32_t compute_difficulty(uint8_t const hash[SHA256_DIGEST_LENGTH])
 		}
 		ptr += 1;
 	}
-	return
+	return (difficulty);
+}
+
+/**
+ * hash_matches_difficulty - check if a give
