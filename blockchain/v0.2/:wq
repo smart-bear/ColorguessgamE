@@ -20,4 +20,6 @@ static uint32_t compute_difficulty(uint8_t const hash[SHA256_DIGEST_LENGTH])
 }
 
 /**
- * hash_matches_difficulty - check if a give
+ * hash_matches_difficulty - check if a given hash matches a given difficulty
+ *
+ * @hash: pointer to the hash t
