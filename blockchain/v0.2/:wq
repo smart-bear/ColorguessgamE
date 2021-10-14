@@ -25,4 +25,7 @@ static uint32_t compute_difficulty(uint8_t const hash[SHA256_DIGEST_LENGTH])
  * @hash: pointer to the hash to check
  * @difficulty: minimum difficulty the hash must match
  *
- * Return: If @difficulty is matched, return 1. Otherwise, 
+ * Return: If @difficulty is matched, return 1. Otherwise, return 0.
+ */
+int hash_matches_difficulty(
+	uint8_t const h
