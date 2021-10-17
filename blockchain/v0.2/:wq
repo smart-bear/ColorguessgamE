@@ -28,4 +28,6 @@ static uint32_t compute_difficulty(uint8_t const hash[SHA256_DIGEST_LENGTH])
  * Return: If @difficulty is matched, return 1. Otherwise, return 0.
  */
 int hash_matches_difficulty(
-	uint8_t const h
+	uint8_t const hash[SHA256_DIGEST_LENGTH], uint32_t difficulty)
+{
+	return (hash ? com
