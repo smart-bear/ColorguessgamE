@@ -4,4 +4,8 @@
 * block_is_valid - check if a block is valid
 * @block: pointer to the block that we want to verify
 * @prev_block: pointer to the prev block
-* Return: 1 if the block is 
+* Return: 1 if the block is invalid
+* 0 if the block is valid
+*/
+
+int block_is_valid(block_t const *
