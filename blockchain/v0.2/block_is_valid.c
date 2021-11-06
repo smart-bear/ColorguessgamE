@@ -14,4 +14,5 @@ uint8_t hash_buffer[SHA256_DIGEST_LENGTH] = {0};
 block_t GENESIS = GENESIS_BLOCK;
 if (!block || (!prev_block && block->info.index != 0))
 return (1);
-if (b
+if (block->info.index == 0)
+return (memcmp(block, &GENESIS, sizeo
