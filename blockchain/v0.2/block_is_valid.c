@@ -8,4 +8,6 @@
 * 0 if the block is valid
 */
 
-int block_is_valid(block_t const *
+int block_is_valid(block_t const *block, block_t const *prev_block)
+{
+uint8_t hash_buffer[SHA2
