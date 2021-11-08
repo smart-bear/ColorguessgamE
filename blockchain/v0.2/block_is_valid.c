@@ -15,4 +15,5 @@ block_t GENESIS = GENESIS_BLOCK;
 if (!block || (!prev_block && block->info.index != 0))
 return (1);
 if (block->info.index == 0)
-return (memcmp(block, &GENESIS, sizeo
+return (memcmp(block, &GENESIS, sizeof(GENESIS)));
+if (block->info.index != prev_
