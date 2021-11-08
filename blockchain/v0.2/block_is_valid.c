@@ -16,4 +16,6 @@ if (!block || (!prev_block && block->info.index != 0))
 return (1);
 if (block->info.index == 0)
 return (memcmp(block, &GENESIS, sizeof(GENESIS)));
-if (block->info.index != prev_
+if (block->info.index != prev_block->info.index + 1)
+return (1);
+if (!block_hash
