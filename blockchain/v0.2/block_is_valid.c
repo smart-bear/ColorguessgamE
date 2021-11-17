@@ -24,4 +24,6 @@ return (1);
 if (memcmp(prev_block->hash, block->info.prev_hash, SHA256_DIGEST_LENGTH))
 return (1);
 if (!block_hash(block, hash_buffer) ||
-memcmp(hash_buffer,
+memcmp(hash_buffer, block->hash, SHA256_DIGEST_LENGTH))
+return (1);
+if (block->data.l
