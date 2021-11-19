@@ -28,4 +28,6 @@ memcmp(hash_buffer, block->hash, SHA256_DIGEST_LENGTH))
 return (1);
 if (block->data.len > BLOCKCHAIN_DATA_MAX)
 return (1);
-if (!hash_matches_diffi
+if (!hash_matches_difficulty(block->hash, block->info.difficulty))
+return (1);
+return (
