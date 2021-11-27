@@ -8,4 +8,7 @@ void block_mine(block_t *block)
 {
 	block->info.nonce = 0;
 	do {
-		++block
+		++block->info.nonce;
+		if (!block_hash(block, block->hash))
+			return;
+	
