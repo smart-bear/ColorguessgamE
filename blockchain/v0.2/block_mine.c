@@ -11,4 +11,4 @@ void block_mine(block_t *block)
 		++block->info.nonce;
 		if (!block_hash(block, block->hash))
 			return;
-	
+	} while (hash_matches_difficulty(block->hash, bloc
