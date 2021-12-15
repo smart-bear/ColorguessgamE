@@ -17,4 +17,6 @@ _swap_endian(&block->info.nonce, sizeof(block->info.nonce));
  * @swap_endian: pointer to data to be converted
  * @blockchain: the blockchain that will contain the blockchain
  * @size: the size of the blockchain
- * Return: pointer to deserialized blockcha
+ * Return: pointer to deserialized blockchain or null
+ */
+int read_blocks(FILE *fp, uint8_t swap_endi
