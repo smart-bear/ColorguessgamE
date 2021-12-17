@@ -26,4 +26,5 @@ int i;
 block_t *block;
 uint32_t data_len;
 long int genesis_size;
-genes
+genesis_size = sizeof(block->info) + sizeof(block->hash) + 20L;
+fsee
