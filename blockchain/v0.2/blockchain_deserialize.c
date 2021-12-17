@@ -23,4 +23,7 @@ int read_blocks(FILE *fp, uint8_t swap_endian,
 		blockchain_t *blockchain, int size)
 {
 int i;
-bl
+block_t *block;
+uint32_t data_len;
+long int genesis_size;
+genes
