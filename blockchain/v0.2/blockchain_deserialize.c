@@ -30,4 +30,7 @@ genesis_size = sizeof(block->info) + sizeof(block->hash) + 20L;
 fseek(fp, genesis_size, SEEK_CUR);
 for (i = 0; i < size - 1; ++i)
 {
-bl
+block = malloc(sizeof(*block));
+if (!block)
+return (-1);
+fread(
