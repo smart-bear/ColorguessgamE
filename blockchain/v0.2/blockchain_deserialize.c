@@ -33,4 +33,5 @@ for (i = 0; i < size - 1; ++i)
 block = malloc(sizeof(*block));
 if (!block)
 return (-1);
-fread(
+fread(&block->info, sizeof(block->info), 1, fp);
+fread(&data_len, sizeof(
