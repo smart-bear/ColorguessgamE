@@ -41,4 +41,6 @@ fread(&block->data.buffer, data_len, 1, fp);
 fread(&block->hash, SHA256_DIGEST_LENGTH, 1, fp);
 if (swap_endian)
 convert_endianness(block);
-block->data.len 
+block->data.len = data_len;
+*(block->data.buffer + data_len) = '\0';
+llist_add_
