@@ -39,4 +39,6 @@ if (swap_endian)
 _swap_endian(&data_len, sizeof(data_len));
 fread(&block->data.buffer, data_len, 1, fp);
 fread(&block->hash, SHA256_DIGEST_LENGTH, 1, fp);
-if (s
+if (swap_endian)
+convert_endianness(block);
+block->data.len 
