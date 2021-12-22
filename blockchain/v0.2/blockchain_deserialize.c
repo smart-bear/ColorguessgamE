@@ -36,4 +36,5 @@ return (-1);
 fread(&block->info, sizeof(block->info), 1, fp);
 fread(&data_len, sizeof(data_len), 1, fp);
 if (swap_endian)
-_swap_endian(&data_len
+_swap_endian(&data_len, sizeof(data_len));
+fread(&block->data.buffer, data_len,
