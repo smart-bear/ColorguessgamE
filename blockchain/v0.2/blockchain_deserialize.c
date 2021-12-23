@@ -43,4 +43,6 @@ if (swap_endian)
 convert_endianness(block);
 block->data.len = data_len;
 *(block->data.buffer + data_len) = '\0';
-llist_add_
+llist_add_node(blockchain->chain, block, ADD_NODE_REAR);
+}
+re
