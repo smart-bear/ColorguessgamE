@@ -45,4 +45,8 @@ block->data.len = data_len;
 *(block->data.buffer + data_len) = '\0';
 llist_add_node(blockchain->chain, block, ADD_NODE_REAR);
 }
-re
+return (0);
+}
+
+/**
+ * blockchain_deserialize - deserializes 
