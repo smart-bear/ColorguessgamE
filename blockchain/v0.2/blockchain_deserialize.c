@@ -49,4 +49,5 @@ return (0);
 }
 
 /**
- * blockchain_deserialize - deserializes 
+ * blockchain_deserialize - deserializes blockchain from file
+ * @path: path to serialized blockchain fil
