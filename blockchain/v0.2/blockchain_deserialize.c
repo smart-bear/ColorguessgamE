@@ -68,4 +68,5 @@ return (NULL);
 fp = fopen(path, "r");
 if (!fp)
 return (NULL);
-fread(&hblk_
+fread(&hblk_magic, sizeof(hblk_magic), 1, fp);
+fread(&hblk_version
