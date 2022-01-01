@@ -73,4 +73,6 @@ fread(&hblk_version, sizeof(hblk_version), 1, fp);
 fread(&hblk_endian, sizeof(hblk_endian), 1, fp);
 fread(&hblk_blocks, sizeof(hblk_blocks), 1, fp);
 if (memcmp(hblk_magic, "HBLK", 4) ||
-me
+memcmp(hblk_version, "0.2", 3))
+return (fclose(fp), NULL);
+bloc
