@@ -75,4 +75,6 @@ fread(&hblk_blocks, sizeof(hblk_blocks), 1, fp);
 if (memcmp(hblk_magic, "HBLK", 4) ||
 memcmp(hblk_version, "0.2", 3))
 return (fclose(fp), NULL);
-bloc
+blockchain = blockchain_create();
+if (!blockchain)
+return (fclose(fp), NULL);
