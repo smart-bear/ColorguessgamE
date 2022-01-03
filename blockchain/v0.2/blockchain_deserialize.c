@@ -81,4 +81,5 @@ return (fclose(fp), NULL);
 swap_endian = _get_endianness() != hblk_endian;
 size = hblk_blocks;
 if (swap_endian)
-_swap_endian(&size, sizeof(
+_swap_endian(&size, sizeof(size));
+if (read_blocks(fp, swap_endian, blockchain, size) == -1)
