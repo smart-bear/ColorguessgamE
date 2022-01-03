@@ -78,3 +78,5 @@ return (fclose(fp), NULL);
 blockchain = blockchain_create();
 if (!blockchain)
 return (fclose(fp), NULL);
+swap_endian = _get_endianness() != hblk_endian;
+size =
