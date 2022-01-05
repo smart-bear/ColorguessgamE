@@ -12,3 +12,6 @@ void blockchain_destroy(blockchain_t *blockchain)
 	{
 		llist_destroy(blockchain->chain, 1, (node_dtor_t)free);
 		blockchain->chain = NULL;
+		free(blockchain);
+	}
+}
