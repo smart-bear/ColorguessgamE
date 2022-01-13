@@ -5,4 +5,6 @@
  * @ptr: pointer to the block to be serialized
  * @idx: index of the parameter
  * @arg: The file in which the data will be written
- * Return: 0 upon su
+ * Return: 0 upon success, or -1 upon failure
+ */
+int write_block(llist_node_
