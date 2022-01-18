@@ -11,3 +11,6 @@ int write_block(llist_node_t ptr, unsigned int idx, void *arg)
 {
 FILE *fp;
 block_t *block = ptr;
+UNUSED(idx);
+fp = (FILE *)arg;
+fwrite((void *)&block
