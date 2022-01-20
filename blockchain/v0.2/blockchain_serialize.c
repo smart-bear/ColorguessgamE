@@ -15,4 +15,5 @@ UNUSED(idx);
 fp = (FILE *)arg;
 fwrite((void *)&block->info, sizeof(block->info), 1, fp);
 fwrite((void *)&block->data.len, sizeof(block->data.len), 1, fp);
-fwrite(block-
+fwrite(block->data.buffer, block->data.len, 1, fp);
+fwrite(block->hash, sizeo
