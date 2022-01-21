@@ -21,4 +21,5 @@ return (0);
 }
 
 /**
- * blockchain_serializ
+ * blockchain_serialize - a function that serializes a Blockchain into a file
+ 
