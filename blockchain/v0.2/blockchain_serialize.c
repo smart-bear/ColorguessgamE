@@ -25,4 +25,7 @@ return (0);
  * @blockchain: pointer to blockchain to be serialized
  * @path: the path to a file to serialize the Blockchain into
  *
- *
+ * Return: 0 upon success, or -1 upon failure
+ */
+
+int blockchain_seri
