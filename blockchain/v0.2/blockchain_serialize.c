@@ -33,3 +33,7 @@ int blockchain_serialize(blockchain_t const *blockchain,
 {
 uint8_t hblk_magic[4];
 uint8_t hblk_version[3];
+uint8_t hblk_endian;
+int32_t hblk_blocks;
+FILE *fp;
+if 
