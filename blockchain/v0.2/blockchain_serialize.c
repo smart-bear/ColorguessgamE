@@ -29,4 +29,7 @@ return (0);
  */
 
 int blockchain_serialize(blockchain_t const *blockchain,
-			 char c
+			 char const *path)
+{
+uint8_t hblk_magic[4];
+uint8_t hblk_version[3];
