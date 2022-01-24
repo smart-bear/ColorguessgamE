@@ -28,4 +28,5 @@ return (0);
  * Return: 0 upon success, or -1 upon failure
  */
 
-int blockchain_seri
+int blockchain_serialize(blockchain_t const *blockchain,
+			 char c
