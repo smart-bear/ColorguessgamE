@@ -41,4 +41,7 @@ return (-1);
 memcpy(hblk_magic, "HBLK", 4);
 memcpy(hblk_version, "0.1", 3);
 hblk_endian = _get_endianness();
-hblk_blocks = llist_size(blockchain->chai
+hblk_blocks = llist_size(blockchain->chain);
+if (hblk_blocks == -1)
+return (-1);
+fp = fopen(path
