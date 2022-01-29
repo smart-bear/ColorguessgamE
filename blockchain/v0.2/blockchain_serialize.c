@@ -47,4 +47,5 @@ return (-1);
 fp = fopen(path, "w");
 if (!fp)
 return (-1);
-fwrite(&hblk_magic, sizeof(hblk_magic), 1, fp)
+fwrite(&hblk_magic, sizeof(hblk_magic), 1, fp);
+fwrite(&hblk_version, sizeof(hblk_version), 1, fp);
