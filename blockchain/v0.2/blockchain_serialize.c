@@ -50,3 +50,5 @@ return (-1);
 fwrite(&hblk_magic, sizeof(hblk_magic), 1, fp);
 fwrite(&hblk_version, sizeof(hblk_version), 1, fp);
 fwrite(&hblk_endian, sizeof(hblk_endian), 1, fp);
+fwrite(&hblk_blocks, sizeof(hblk_blocks), 1, fp);
+if (llist_for_eac
