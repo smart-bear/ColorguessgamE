@@ -53,4 +53,10 @@ fwrite(&hblk_endian, sizeof(hblk_endian), 1, fp);
 fwrite(&hblk_blocks, sizeof(hblk_blocks), 1, fp);
 if (llist_for_each(blockchain->chain, write_block, fp) == -1)
 {
-fclos
+fclose(fp);
+return (-1);
+}
+fclose(fp);
+return (0);
+}
+
