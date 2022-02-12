@@ -11,4 +11,9 @@ int i = 0, bit = 0, one_found = 0, copy_difficulty = 0;
 copy_difficulty = difficulty;
 for (i = 0; i < SHA256_DIGEST_LENGTH; i++)
 {
-for (bit = 7; bit >= 
+for (bit = 7; bit >= 0; bit--)
+{
+if (hash[i] & 1 << bit)
+{
+one_found = 1;
+break;
