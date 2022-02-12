@@ -9,4 +9,6 @@ uint32_t difficulty)
 int i = 0, bit = 0, one_found = 0, copy_difficulty = 0;
 
 copy_difficulty = difficulty;
-for (i = 
+for (i = 0; i < SHA256_DIGEST_LENGTH; i++)
+{
+for (bit = 7; bit >= 
