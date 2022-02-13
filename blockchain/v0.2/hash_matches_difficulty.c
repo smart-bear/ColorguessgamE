@@ -17,3 +17,12 @@ if (hash[i] & 1 << bit)
 {
 one_found = 1;
 break;
+}
+copy_difficulty--;
+}
+if (one_found == 1)
+{
+break;
+}
+}
+if (cop
