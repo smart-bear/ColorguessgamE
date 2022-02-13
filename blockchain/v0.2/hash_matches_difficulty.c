@@ -25,4 +25,9 @@ if (one_found == 1)
 break;
 }
 }
-if (cop
+if (copy_difficulty <= 0)
+{
+return (1);
+}
+return (0);
+}
