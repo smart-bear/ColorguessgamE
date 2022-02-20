@@ -11,4 +11,7 @@ uint8_t _get_endianness(void)
 
 	if (order.bytes[0] == 1)
 		return (1); /* Little endian */
-	if (order.bytes[0
+	if (order.bytes[0] == 0)
+		return (2); /* Big endian */
+
+	return (0); /* Should not hap
