@@ -18,4 +18,6 @@ uint8_t _get_endianness(void)
 }
 
 /**
- * _swap_endian - Swap endianne
+ * _swap_endian - Swap endianness
+ *
+ * @p:    Address of the sequence to swap
