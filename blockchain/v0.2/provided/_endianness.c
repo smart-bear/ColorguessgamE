@@ -26,4 +26,6 @@ uint8_t _get_endianness(void)
 void _swap_endian(void *p, size_t size)
 {
 	size_t i;
-	
+	uint8_t *n = (uint8_t *)p;
+
+	for (i = 0; i < size / 2; i++)
