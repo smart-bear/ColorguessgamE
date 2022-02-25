@@ -22,4 +22,8 @@ uint8_t _get_endianness(void)
  *
  * @p:    Address of the sequence to swap
  * @size: Size of the sequence pointed to by @p
- 
+ */
+void _swap_endian(void *p, size_t size)
+{
+	size_t i;
+	
