@@ -29,3 +29,6 @@ void _swap_endian(void *p, size_t size)
 	uint8_t *n = (uint8_t *)p;
 
 	for (i = 0; i < size / 2; i++)
+	{
+		n[i] ^= n[size - (i + 1)];
+		n[size - (i + 1)] ^= n[i];
