@@ -4,4 +4,7 @@
 # include <stdint.h>
 # include <stddef.h>
 
-/
+/*
+ * # include <stdint.h>
+ *
+ * # define SWAPENDIAN_16(value)
