@@ -12,4 +12,6 @@
  *
  * # define SWAPENDIAN_32(value)	(((value & 0xFF000000ul) >> 24) | \
  *				((value & 0x00FF0000ul) >>  8) | \
- *				((valu
+ *				((value & 0x0000FF00ul) <<  8) | \
+ *				((value & 0x000000FFul) << 24))
+ *
