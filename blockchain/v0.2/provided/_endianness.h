@@ -10,4 +10,6 @@
  * # define SWAPENDIAN_16(value)	(((value & 0xFF00) >> 8) | \
  *				((value & 0x00FF) << 8))
  *
- * # define SWAPENDIAN_32(value)	(((value & 0x
+ * # define SWAPENDIAN_32(value)	(((value & 0xFF000000ul) >> 24) | \
+ *				((value & 0x00FF0000ul) >>  8) | \
+ *				((valu
