@@ -15,3 +15,4 @@
  *				((value & 0x0000FF00ul) <<  8) | \
  *				((value & 0x000000FFul) << 24))
  *
+ * # define SWAPENDIAN_64(value)	(((value & 0xFF0000
