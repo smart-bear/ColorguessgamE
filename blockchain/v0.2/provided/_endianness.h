@@ -16,4 +16,6 @@
  *				((value & 0x000000FFul) << 24))
  *
  * # define SWAPENDIAN_64(value)	(((value & 0xFF00000000000000ULL) >> 56) | \
- *				((value & 0x00FF000000000000UL
+ *				((value & 0x00FF000000000000ULL) >> 40) | \
+ *				((value & 0x0000FF0000000000ULL) >> 24) | \
+ *			
