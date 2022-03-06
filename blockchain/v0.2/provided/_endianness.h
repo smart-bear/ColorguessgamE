@@ -25,4 +25,9 @@
  *				((value & 0x00000000000000FFULL) << 56))
  */
 
-# define SWAPENDIAN(value)	_swap_endian((char *)(&value), sizeo
+# define SWAPENDIAN(value)	_swap_endian((char *)(&value), sizeof(value))
+
+/**
+ * union _endian_u - Used to test endianness
+ *
+ * @v
