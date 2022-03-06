@@ -30,4 +30,7 @@
 /**
  * union _endian_u - Used to test endianness
  *
- * @v
+ * @value: 32-bit value
+ * @bytes: 4 bytes array
+ */
+typedef
