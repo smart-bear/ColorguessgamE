@@ -33,4 +33,10 @@
  * @value: 32-bit value
  * @bytes: 4 bytes array
  */
-typedef
+typedef union _endian_u
+{
+	uint32_t value;
+	uint8_t bytes[4];
+} _endian_t;
+
+ui
