@@ -39,4 +39,5 @@ typedef union _endian_u
 	uint8_t bytes[4];
 } _endian_t;
 
-ui
+uint8_t	_get_endianness(void);
+void _swap_endian(void *p, size_t s
