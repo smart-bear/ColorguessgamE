@@ -3,4 +3,7 @@
 block_t const _genesis = {
 	{ /* info */
 		0 /* index */,
-		0, /* di
+		0, /* difficulty */
+		1537578000, /* timestamp */
+		0, /* nonce */
+	
