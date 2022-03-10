@@ -6,4 +6,7 @@ block_t const _genesis = {
 		0, /* difficulty */
 		1537578000, /* timestamp */
 		0, /* nonce */
-	
+		{0} /* prev_hash */
+	},
+	{ /* data */
+		"Holberton School", /*
