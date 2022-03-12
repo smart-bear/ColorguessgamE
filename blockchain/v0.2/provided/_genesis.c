@@ -9,4 +9,7 @@ block_t const _genesis = {
 		{0} /* prev_hash */
 	},
 	{ /* data */
-		"Holberton School", /*
+		"Holberton School", /* buffer */
+		16 /* len */
+	},
+	"\xc5\x2c\x26\xc8\xb5\x46\x16\x
