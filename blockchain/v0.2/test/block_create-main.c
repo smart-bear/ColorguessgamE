@@ -4,4 +4,5 @@
 
 #include "blockchain.h"
 
-void _bl
+void _blockchain_print(blockchain_t const *blockchain);
+void _bloc
