@@ -12,4 +12,9 @@ void _blockchain_destroy(blockchain_t *blockchain);
  *
  * Return: EXIT_SUCCESS or EXIT_FAILURE
  */
-int main(v
+int main(void)
+{
+blockchain_t *blockchain;
+block_t *block;
+
+blockc
