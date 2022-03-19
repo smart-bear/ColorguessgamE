@@ -17,4 +17,5 @@ int main(void)
 blockchain_t *blockchain;
 block_t *block;
 
-blockc
+blockchain = blockchain_create();
+block = llist_get_head(bl
