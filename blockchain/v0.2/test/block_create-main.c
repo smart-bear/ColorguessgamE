@@ -26,4 +26,8 @@ block = block_create(block, (int8_t *)"School", 6);
 llist_add_node(blockchain->chain, block, ADD_NODE_REAR);
 
 _blockchain_print(blockchain);
-_blockchain_destr
+_blockchain_destroy(blockchain);
+
+return (EXIT_SUCCESS);
+}
+
