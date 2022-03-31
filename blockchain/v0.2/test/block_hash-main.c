@@ -18,4 +18,6 @@ blockchain_t *blockchain;
 block_t *block;
 
 blockchain = blockchain_create();
-block = llist_get_hea
+block = llist_get_head(blockchain->chain);
+
+block = block_create(block, (int8_t *)"H
