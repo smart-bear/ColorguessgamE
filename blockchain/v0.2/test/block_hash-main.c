@@ -24,4 +24,5 @@ block = block_create(block, (int8_t *)"Holberton", 9);
 llist_add_node(blockchain->chain, block, ADD_NODE_REAR);
 _blockchain_print(blockchain);
 
-block_h
+block_hash(block, block->hash);
+block = block_create(block, (int8_t *)"S
