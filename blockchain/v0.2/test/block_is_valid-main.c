@@ -28,3 +28,8 @@ fprintf(stderr, "Block invalid\n");
 return (EXIT_FAILURE);
 }
 printf("Block is valid\n");
+
+blockchain_destroy(blockchain);
+
+return (EXIT_SUCCESS);
+}
