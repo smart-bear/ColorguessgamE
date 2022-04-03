@@ -57,3 +57,24 @@ int main(void)
 {
     blockchain_t *blockchain;
     block_t *block;
+
+    blockchain = blockchain_create();
+    block = llist_get_head(blockchain->chain);
+    block = _add_block(blockchain, block, "Holberton");
+    block = _add_block(blockchain, block, "School");
+    block = _add_block(blockchain, block, "of");
+    block = _add_block(blockchain, block, "Software");
+    block = _add_block(blockchain, block, "Engineering");
+    block = _add_block(blockchain, block, "972");
+    block = _add_block(blockchain, block, "Mission");
+    block = _add_block(blockchain, block, "Street");
+    block = _add_block(blockchain, block, "San Francisco");
+    block = _add_block(blockchain, block, "CA");
+    block = _add_block(blockchain, block, "\\o/");
+
+    _blockchain_print_brief(blockchain);
+
+    blockchain_destroy(blockchain);
+
+    return (EXIT_SUCCESS);
+}
