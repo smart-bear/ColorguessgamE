@@ -4,4 +4,9 @@
 
 #include "blockchain.h"
 
-void _blockchain_print_brief(bloc
+void _blockchain_print_brief(blockchain_t const *blockchain);
+
+/**
+ * main - Entry point
+ *
+ * Return: 
