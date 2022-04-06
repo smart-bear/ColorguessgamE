@@ -15,4 +15,7 @@ int main(void)
 {
 blockchain_t *blockchain;
 
-blockchain = blockchain_deserialize("save.hblk")
+blockchain = blockchain_deserialize("save.hblk");
+
+_blockchain_print_brief(blockchain);
+blockchain_destroy(
