@@ -9,4 +9,8 @@ void _blockchain_print_brief(blockchain_t const *blockchain);
 /**
  * main - Entry point
  *
- * Return: 
+ * Return: EXIT_SUCCESS or EXIT_FAILURE
+ */
+int main(void)
+{
+blockcha
