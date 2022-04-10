@@ -11,4 +11,8 @@
  */
 int main(void)
 {
-blockchain_t *blo
+blockchain_t *blockchain;
+block_t *block;
+
+blockchain = blockchain_create();
+block
