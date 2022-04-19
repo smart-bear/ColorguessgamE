@@ -28,4 +28,8 @@ llist_add_node(blockchain->chain, block, ADD_NODE_REAR);
 block = block_create(block, (int8_t *)"Engineering", 11);
 llist_add_node(blockchain->chain, block, ADD_NODE_REAR);
 
-blockchain_destroy(bl
+blockchain_destroy(blockchain);
+
+return (EXIT_SUCCESS);
+}
+
