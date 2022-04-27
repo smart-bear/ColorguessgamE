@@ -12,4 +12,7 @@
 int main(void)
 {
 blockchain_t *blockchain;
-block_t *block
+block_t *block;
+
+blockchain = blockchain_create();
+block = llist_get_h
