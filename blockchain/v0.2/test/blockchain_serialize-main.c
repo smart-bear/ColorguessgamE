@@ -29,4 +29,6 @@ llist_add_node(blockchain->chain, block, ADD_NODE_REAR);
 block = block_create(block, (int8_t *)"Software", 8);
 block_hash(block, block->hash);
 llist_add_node(blockchain->chain, block, ADD_NODE_REAR);
-block = block_create(block, (int8_t *)"Engineeri
+block = block_create(block, (int8_t *)"Engineering", 11);
+block_hash(block, block->hash);
+llist_add_node(blockchain->chain, blo
