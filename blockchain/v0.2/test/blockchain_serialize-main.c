@@ -37,4 +37,6 @@ blockchain_serialize(blockchain, "save.hblk");
 
 blockchain_destroy(blockchain);
 
-return (
+return (EXIT_SUCCESS);
+}
+
