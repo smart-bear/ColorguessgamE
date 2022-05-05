@@ -10,4 +10,8 @@
  * @buf: Pointer to the buffer to be printed
  * @len: Number of bytes from @buf to be printed
  */
-static void _p
+static void _print_hex_buffer(uint8_t const *buf, size_t len)
+{
+size_t i;
+
+for
