@@ -14,4 +14,7 @@ static void _print_hex_buffer(uint8_t const *buf, size_t len)
 {
 size_t i;
 
-for
+for (i = 0; buf && i < len; i++)
+printf("%02x", buf[i]);
+
+ff
