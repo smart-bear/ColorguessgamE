@@ -21,4 +21,6 @@ fflush(NULL);
 }
 
 /**
- * test_hash_matches_difficulty -
+ * test_hash_matches_difficulty - Test the hash_matches_difficulty function
+ *
+ 
