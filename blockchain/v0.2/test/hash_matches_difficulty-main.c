@@ -17,4 +17,8 @@ size_t i;
 for (i = 0; buf && i < len; i++)
 printf("%02x", buf[i]);
 
-ff
+fflush(NULL);
+}
+
+/**
+ * test_hash_matches_difficulty -
