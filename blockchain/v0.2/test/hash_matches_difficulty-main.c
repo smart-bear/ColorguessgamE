@@ -24,4 +24,6 @@ fflush(NULL);
  * test_hash_matches_difficulty - Test the hash_matches_difficulty function
  *
  * @hash:       Tested hash
- * @difficulty: Tested diffi
+ * @difficulty: Tested difficulty
+ */
+void test_hash_matches_difficulty(uint8_t const *hash, 
