@@ -26,4 +26,7 @@ fflush(NULL);
  * @hash:       Tested hash
  * @difficulty: Tested difficulty
  */
-void test_hash_matches_difficulty(uint8_t const *hash, 
+void test_hash_matches_difficulty(uint8_t const *hash, uint32_t difficulty)
+{
+printf("Hash: ");
+_print_hex_buffer(ha
