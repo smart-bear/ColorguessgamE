@@ -30,4 +30,6 @@ void test_hash_matches_difficulty(uint8_t const *hash, uint32_t difficulty)
 {
 printf("Hash: ");
 _print_hex_buffer(hash, SHA256_DIGEST_LENGTH);
-printf("\nDifficulty: %u\n", difficulty)
+printf("\nDifficulty: %u\n", difficulty);
+if (hash_matches_difficulty(hash, difficulty))
+printf("Mat
