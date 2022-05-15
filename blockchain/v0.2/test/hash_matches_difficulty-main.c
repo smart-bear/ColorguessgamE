@@ -38,4 +38,8 @@ printf("Doesn't match difficulty\n");
 }
 
 /**
- 
+ * main - Entry point
+ *
+ * Return: EXIT_SUCCESS or EXIT_FAILURE
+ */
+in
