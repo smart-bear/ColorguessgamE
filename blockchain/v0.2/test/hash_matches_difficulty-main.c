@@ -42,4 +42,7 @@ printf("Doesn't match difficulty\n");
  *
  * Return: EXIT_SUCCESS or EXIT_FAILURE
  */
-in
+int main(void)
+{
+uint8_t hash[SHA256_DIGEST_LENGTH];
+uint32_t
