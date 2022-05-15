@@ -32,4 +32,10 @@ printf("Hash: ");
 _print_hex_buffer(hash, SHA256_DIGEST_LENGTH);
 printf("\nDifficulty: %u\n", difficulty);
 if (hash_matches_difficulty(hash, difficulty))
-printf("Mat
+printf("Matches difficulty\n");
+else
+printf("Doesn't match difficulty\n");
+}
+
+/**
+ 
