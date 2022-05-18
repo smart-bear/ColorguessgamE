@@ -49,4 +49,6 @@ uint32_t difficulty;
 
     /* Test case 1 */
 memset(hash, 0, SHA256_DIGEST_LENGTH);
-hash[3
+hash[31] = 1;
+difficulty = SHA256_DIGEST_LENGTH * 8 - 1;
+tes
