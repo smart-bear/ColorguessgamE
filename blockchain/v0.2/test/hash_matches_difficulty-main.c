@@ -45,4 +45,8 @@ printf("Doesn't match difficulty\n");
 int main(void)
 {
 uint8_t hash[SHA256_DIGEST_LENGTH];
-uint32_t
+uint32_t difficulty;
+
+    /* Test case 1 */
+memset(hash, 0, SHA256_DIGEST_LENGTH);
+hash[3
