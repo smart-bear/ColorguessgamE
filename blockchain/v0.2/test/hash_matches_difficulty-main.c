@@ -55,4 +55,7 @@ test_hash_matches_difficulty(hash, difficulty);
 
     /* Test case 2 */
 memset(hash, 0xFF, SHA256_DIGEST_LENGTH);
-hash[0
+hash[0] = 0;
+hash[1] = 98;
+difficulty = 9;
+test_hash_matches_dif
