@@ -51,4 +51,6 @@ uint32_t difficulty;
 memset(hash, 0, SHA256_DIGEST_LENGTH);
 hash[31] = 1;
 difficulty = SHA256_DIGEST_LENGTH * 8 - 1;
-tes
+test_hash_matches_difficulty(hash, difficulty);
+
+    /* 
