@@ -53,4 +53,6 @@ hash[31] = 1;
 difficulty = SHA256_DIGEST_LENGTH * 8 - 1;
 test_hash_matches_difficulty(hash, difficulty);
 
-    /* 
+    /* Test case 2 */
+memset(hash, 0xFF, SHA256_DIGEST_LENGTH);
+hash[0
