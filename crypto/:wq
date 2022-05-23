@@ -9,4 +9,8 @@ const EC_POINT *pnt = NULL;
 
 if (key == NULL || pub == NULL)
 return (NULL);
-pnt = EC_KEY_get0_public_key(key
+pnt = EC_KEY_get0_public_key(key);
+
+if (pnt == NULL) 
+return (NULL);
+grp = EC_KEY_get0_group(key);
