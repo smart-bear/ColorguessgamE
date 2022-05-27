@@ -14,3 +14,7 @@ pnt = EC_KEY_get0_public_key(key);
 if (pnt == NULL) 
 return (NULL);
 grp = EC_KEY_get0_group(key);
+
+if (grp == NULL) 
+return (NULL);
+if (!EC_POIN
