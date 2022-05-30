@@ -18,4 +18,8 @@ grp = EC_KEY_get0_group(key);
 if (grp == NULL) 
 return (NULL);
 if (!EC_POINT_point2oct(group, point, POINT_CONVERSION_UNCOMPRESSED,
- pub, E
+ pub, EC_PUB_LEN, NULL))
+ return (NULL);
+ return (pub);
+}
+
