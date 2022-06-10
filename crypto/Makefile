@@ -8,4 +8,5 @@ LIB = libhblk_crypto.a
 .PHONY: libhblk_crypto.a
 
 libhblk_crypto.a: $(OBJS)
-	ar rcs $(LIB) $
+	ar rcs $(LIB) $(OBJS)
+
