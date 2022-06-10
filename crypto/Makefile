@@ -5,4 +5,7 @@ SRC = sha256.c ec_create.c ec_to_pub.c ec_from_pub.c ec_save.c ec_load.c ec_sign
 OBJS = $(patsubst %.c, %.o, $(SRC))
 LIB = libhblk_crypto.a
 
-.PHONY: libhblk_crypto
+.PHONY: libhblk_crypto.a
+
+libhblk_crypto.a: $(OBJS)
+	ar rcs $(LIB) $
