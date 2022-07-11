@@ -24,4 +24,6 @@ EC_KEY *ec_from_pub(uint8_t const pub[EC_PUB_LEN])
 		EC_KEY_free(key);
 		return (NULL);
 	}
-	if (!EC_POINT_oct2point(group, p, pub, E
+	if (!EC_POINT_oct2point(group, p, pub, EC_PUB_LEN, NULL))
+		goto out;
+	if (!EC_KEY_set_public_key(key
