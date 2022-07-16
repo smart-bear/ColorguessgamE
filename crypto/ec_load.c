@@ -6,4 +6,7 @@
  *
  * Return: pointer to created EC key pair, NULL on error
  */
-E
+EC_KEY *ec_load(char const *folder)
+{
+	EC_KEY *key = NULL;
+	char buf
