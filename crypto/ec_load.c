@@ -12,4 +12,7 @@ EC_KEY *ec_load(char const *folder)
 	char buf[BUFSIZ];
 	FILE *fp;
 
-	if (!folder || strlen(folder) + strlen(PUB_FILENA
+	if (!folder || strlen(folder) + strlen(PUB_FILENAME) > BUFSIZ)
+		return (NULL);
+
+	sprintf(buf, "%s/%s", folder, PUB_FILEN
