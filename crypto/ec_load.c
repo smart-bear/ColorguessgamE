@@ -15,4 +15,8 @@ EC_KEY *ec_load(char const *folder)
 	if (!folder || strlen(folder) + strlen(PUB_FILENAME) > BUFSIZ)
 		return (NULL);
 
-	sprintf(buf, "%s/%s", folder, PUB_FILEN
+	sprintf(buf, "%s/%s", folder, PUB_FILENAME);
+	fp = fopen(buf, "r");
+	if (!fp)
+		return (NULL);
+	if (!PEM_read_EC_PUB
