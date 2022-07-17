@@ -19,4 +19,6 @@ EC_KEY *ec_load(char const *folder)
 	fp = fopen(buf, "r");
 	if (!fp)
 		return (NULL);
-	if (!PEM_read_EC_PUB
+	if (!PEM_read_EC_PUBKEY(fp, &key, NULL, NULL))
+		goto out;
+	sprintf
