@@ -21,4 +21,5 @@ EC_KEY *ec_load(char const *folder)
 		return (NULL);
 	if (!PEM_read_EC_PUBKEY(fp, &key, NULL, NULL))
 		goto out;
-	sprintf
+	sprintf(buf, "%s/%s", folder, PRI_FILENAME);
+	fp = fopen(buf, "r")
