@@ -25,4 +25,8 @@ EC_KEY *ec_load(char const *folder)
 	fp = fopen(buf, "r");
 	if (!fp)
 		return (NULL);
-	if (!PEM_read_ECPrivateK
+	if (!PEM_read_ECPrivateKey(fp, &key, NULL, NULL))
+		goto out;
+out:
+	fclose(fp);
+	return (key);
