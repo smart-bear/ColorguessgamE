@@ -30,3 +30,4 @@ EC_KEY *ec_load(char const *folder)
 out:
 	fclose(fp);
 	return (key);
+}
