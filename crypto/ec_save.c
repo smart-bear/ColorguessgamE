@@ -5,4 +5,6 @@
  * @key: EC key pair to save
  * @folder: path to folder to save keys
  *
- * Return: 1 on success
+ * Return: 1 on success, 0 on error
+ */
+int ec_save(EC_KEY *key, char const *folder)
