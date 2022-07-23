@@ -13,4 +13,5 @@ int ec_save(EC_KEY *key, char const *folder)
 	FILE *fp;
 
 	if (!key || !folder || strlen(folder) + strlen(PUB_FILENAME) > BUFSIZ)
-		
+		return (0);
+	mkdir(folder, S_IRWXU | S_IRGRP | S_IXG
