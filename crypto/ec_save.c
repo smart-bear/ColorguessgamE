@@ -12,4 +12,5 @@ int ec_save(EC_KEY *key, char const *folder)
 	char buf[BUFSIZ];
 	FILE *fp;
 
-	if (!key || !folder
+	if (!key || !folder || strlen(folder) + strlen(PUB_FILENAME) > BUFSIZ)
+		
