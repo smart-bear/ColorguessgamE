@@ -16,3 +16,8 @@ int ec_save(EC_KEY *key, char const *folder)
 		return (0);
 	mkdir(folder, S_IRWXU | S_IRGRP | S_IXGRP | S_IROTH | S_IXOTH);
 	sprintf(buf, "%s/%s", folder, PUB_FILENAME);
+	fp = fopen(buf, "w");
+	if (!fp)
+		return (0);
+	if (!PEM_write_EC_PUBKEY(fp, key))
+		g
