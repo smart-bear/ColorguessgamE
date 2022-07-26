@@ -22,4 +22,8 @@ int ec_save(EC_KEY *key, char const *folder)
 	if (!PEM_write_EC_PUBKEY(fp, key))
 		goto out;
 	fclose(fp);
-	sprintf(buf, "%s/%s", folder, PRI_FIL
+	sprintf(buf, "%s/%s", folder, PRI_FILENAME);
+	fp = fopen(buf, "w");
+	if (!fp)
+		return (0);
+	if 
