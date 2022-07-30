@@ -26,4 +26,9 @@ int ec_save(EC_KEY *key, char const *folder)
 	fp = fopen(buf, "w");
 	if (!fp)
 		return (0);
-	if (!PEM_write_ECPrivateKey(fp, key, NULL, NULL, 0, NULL, N
+	if (!PEM_write_ECPrivateKey(fp, key, NULL, NULL, 0, NULL, NULL))
+		goto out;
+	fclose(fp);
+	return (1);
+out:
+	fclose(fp);
