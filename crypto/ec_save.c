@@ -32,3 +32,5 @@ int ec_save(EC_KEY *key, char const *folder)
 	return (1);
 out:
 	fclose(fp);
+	return (0);
+}
