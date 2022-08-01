@@ -16,3 +16,7 @@ return (NULL);
 grp = EC_KEY_get0_group(key);
 
 if (grp == NULL)
+{
+return (NULL);
+}
+if (!EC_POINT_point2oct(grp, pnt, POINT_CON
