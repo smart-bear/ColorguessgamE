@@ -8,4 +8,8 @@ const EC_GROUP *grp = NULL;
 const EC_POINT *pnt = NULL;
 
 if (key == NULL || pub == NULL)
-return (N
+return (NULL);
+pnt = EC_KEY_get0_public_key(key);
+
+if (pnt == NULL)
+ret
