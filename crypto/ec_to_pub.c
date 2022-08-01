@@ -12,4 +12,7 @@ return (NULL);
 pnt = EC_KEY_get0_public_key(key);
 
 if (pnt == NULL)
-ret
+return (NULL);
+grp = EC_KEY_get0_group(key);
+
+if (grp == NULL)
