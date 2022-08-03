@@ -19,4 +19,9 @@ if (grp == NULL)
 {
 return (NULL);
 }
-if (!EC_POINT_point2oct(grp, pnt, POINT_CON
+if (!EC_POINT_point2oct(grp, pnt, POINT_CONVERSION_UNCOMPRESSED,
+pub, EC_PUB_LEN, NULL))
+{
+return (NULL);
+}
+retu
