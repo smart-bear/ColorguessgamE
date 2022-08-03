@@ -24,4 +24,6 @@ pub, EC_PUB_LEN, NULL))
 {
 return (NULL);
 }
-retu
+return (pub);
+}
+
