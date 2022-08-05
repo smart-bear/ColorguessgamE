@@ -3,4 +3,6 @@
 /**
  * ec_verify - verifies a message with public key
  * @key: pointer to struct containing key pair
- * @msg
+ * @msg: the message to sign
+ * @msglen: length of message
+ * @sig: address 
