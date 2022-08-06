@@ -5,4 +5,7 @@
  * @key: pointer to struct containing key pair
  * @msg: the message to sign
  * @msglen: length of message
- * @sig: address 
+ * @sig: address to store signature
+ * Return: 1 if verified else 0
+ */
+int ec_verif
