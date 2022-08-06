@@ -8,4 +8,5 @@
  * @sig: address to store signature
  * Return: 1 if verified else 0
  */
-int ec_verif
+int ec_verify(EC_KEY const *key, uint8_t const *msg, size_t msglen,
+	sig
