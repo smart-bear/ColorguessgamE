@@ -2,4 +2,7 @@
 #define HBLK_CRYPTO_H
 
 #include <openssl/ec.h>
-#include <openssl
+#include <openssl/evp.h>
+#include <openssl/pem.h>
+#include <openssl/sha.h>
+#in
