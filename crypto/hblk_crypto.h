@@ -5,4 +5,8 @@
 #include <openssl/evp.h>
 #include <openssl/pem.h>
 #include <openssl/sha.h>
-#in
+#include <stdint.h>
+#include <string.h>
+#include <sys/stat.h>
+
+#define PUB_FIL
