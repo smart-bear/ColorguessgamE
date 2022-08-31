@@ -9,4 +9,6 @@
 #include <string.h>
 #include <sys/stat.h>
 
-#define PUB_FIL
+#define PUB_FILENAME	"key_pub.pem"
+#define PRI_FILENAME	"key.pem"
+#define 
