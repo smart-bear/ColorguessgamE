@@ -15,4 +15,7 @@
 
 /* EC_KEY public key octet string length (using 256-bit curve) */
 #define EC_PUB_LEN	65
-/* Maximum signature octet string length (using 256-bit cur
+/* Maximum signature octet string length (using 256-bit curve) */
+#define SIG_MAX_LEN     72
+/**
+ * struct sig_s - EC Signat
