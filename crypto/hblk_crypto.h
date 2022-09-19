@@ -20,4 +20,5 @@
 /**
  * struct sig_s - EC Signature structure
  *
- * @sig: Signature buffer. The whole space may not be u
+ * @sig: Signature buffer. The whole space may not be used
+ * @len: Signature size. Can't exceed SIG_MAX_LEN, theref
