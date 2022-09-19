@@ -18,4 +18,6 @@
 /* Maximum signature octet string length (using 256-bit curve) */
 #define SIG_MAX_LEN     72
 /**
- * struct sig_s - EC Signat
+ * struct sig_s - EC Signature structure
+ *
+ * @sig: Signature buffer. The whole space may not be u
