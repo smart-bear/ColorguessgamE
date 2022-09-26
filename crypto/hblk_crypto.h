@@ -26,4 +26,5 @@
 typedef struct sig_s
 {
 	/*
-	 * @sig 
+	 * @sig must stay first, so we can directly use the structure as
+	 *
