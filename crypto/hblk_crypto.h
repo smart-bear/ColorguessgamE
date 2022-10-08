@@ -34,4 +34,6 @@ typedef struct sig_s
 } sig_t;
 
 uint8_t *sha256(int8_t const *s, size_t len,
-	uint8
+	uint8_t digest[SHA256_DIGEST_LENGTH]);
+EC_KEY *ec_create(void);
+ui
