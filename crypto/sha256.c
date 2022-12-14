@@ -5,4 +5,4 @@ uint8_t digest[SHA256_DIGEST_LENGTH])
 {
 	if (s == NULL || digest == NULL)
 		return (NULL);
-	
+	return (SHA256((const unsigned char *)s, len
