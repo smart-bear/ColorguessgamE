@@ -12,4 +12,7 @@ void _print_hex_buffer(uint8_t const *buf, size_t len);
  */
 int main(void)
 {
-EC_
+EC_KEY *key, *key2;
+uint8_t pub[EC_PUB_LEN], pub2[EC_PUB_LEN];
+
+    /* Prer
