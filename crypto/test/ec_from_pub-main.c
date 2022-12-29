@@ -15,4 +15,8 @@ int main(void)
 EC_KEY *key, *key2;
 uint8_t pub[EC_PUB_LEN], pub2[EC_PUB_LEN];
 
-    /* Prer
+    /* Prerequisites */
+key = ec_create();
+if (!key)
+{
+fprintf(stde
