@@ -19,4 +19,5 @@ uint8_t pub[EC_PUB_LEN], pub2[EC_PUB_LEN];
 key = ec_create();
 if (!key)
 {
-fprintf(stde
+fprintf(stderr, "ec_create() failed\n");
+return (EXIT_FAILURE);
