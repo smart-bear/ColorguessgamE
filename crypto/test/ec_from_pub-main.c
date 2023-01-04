@@ -24,4 +24,7 @@ return (EXIT_FAILURE);
 }
 printf("Successfully created EC key pair\n");
 
-if (!ec_to_p
+if (!ec_to_pub(key, pub))
+{
+fprintf(stderr, "ec_to_pub() failed\n");
+EC_K
