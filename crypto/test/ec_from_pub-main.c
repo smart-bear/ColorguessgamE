@@ -27,4 +27,9 @@ printf("Successfully created EC key pair\n");
 if (!ec_to_pub(key, pub))
 {
 fprintf(stderr, "ec_to_pub() failed\n");
-EC_K
+EC_KEY_free(key);
+return (EXIT_FAILURE);
+}
+
+printf("Public key: ");
+_
