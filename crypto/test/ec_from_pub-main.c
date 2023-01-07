@@ -32,4 +32,7 @@ return (EXIT_FAILURE);
 }
 
 printf("Public key: ");
-_
+_print_hex_buffer(pub, EC_PUB_LEN);
+printf("\n");
+
+    /* T
