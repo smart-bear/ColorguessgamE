@@ -38,3 +38,7 @@ printf("\n");
     /* Test `ec_from_pub()` */
 key2 = ec_from_pub(pub);
 if (!key2)
+{
+fprintf(stderr, "ec_from_pub() failed\n");
+EC_KEY_free(key);
+ret
