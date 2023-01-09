@@ -35,4 +35,6 @@ printf("Public key: ");
 _print_hex_buffer(pub, EC_PUB_LEN);
 printf("\n");
 
-    /* T
+    /* Test `ec_from_pub()` */
+key2 = ec_from_pub(pub);
+if (!key2)
