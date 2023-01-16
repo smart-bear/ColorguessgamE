@@ -41,4 +41,8 @@ if (!key2)
 {
 fprintf(stderr, "ec_from_pub() failed\n");
 EC_KEY_free(key);
-ret
+return (EXIT_FAILURE);
+}
+if (!EC_KEY_check_key(key2))
+{
+fprintf(stderr, "Ke
