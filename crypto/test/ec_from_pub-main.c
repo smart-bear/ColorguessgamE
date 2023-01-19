@@ -59,4 +59,8 @@ EC_KEY_free(key2);
 return (EXIT_FAILURE);
 }
 printf("Public key: ");
-_p
+_print_hex_buffer(pub2, EC_PUB_LEN);
+printf("\n");
+
+    /* Cleanup */
+EC_K
