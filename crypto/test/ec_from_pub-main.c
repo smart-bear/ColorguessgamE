@@ -48,4 +48,6 @@ if (!EC_KEY_check_key(key2))
 fprintf(stderr, "Key2 verification failed\n");
 return (EXIT_FAILURE);
 }
-printf("
+printf("Successfully created EC key from public key\n");
+
+    /* Extract p
