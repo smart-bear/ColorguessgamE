@@ -52,3 +52,7 @@ printf("Successfully created EC key from public key\n");
 
     /* Extract public key from new key */
 if (!ec_to_pub(key2, pub2))
+{
+fprintf(stderr, "ec_to_pub() failed\n");
+EC_KEY_free(key);
+EC_KEY
