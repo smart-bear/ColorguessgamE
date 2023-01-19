@@ -45,4 +45,7 @@ return (EXIT_FAILURE);
 }
 if (!EC_KEY_check_key(key2))
 {
-fprintf(stderr, "Ke
+fprintf(stderr, "Key2 verification failed\n");
+return (EXIT_FAILURE);
+}
+printf("
