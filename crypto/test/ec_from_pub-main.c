@@ -63,4 +63,8 @@ _print_hex_buffer(pub2, EC_PUB_LEN);
 printf("\n");
 
     /* Cleanup */
-EC_K
+EC_KEY_free(key);
+EC_KEY_free(key2);
+
+return (EXIT_SUCCESS);
+}
