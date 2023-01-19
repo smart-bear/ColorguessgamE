@@ -55,4 +55,8 @@ if (!ec_to_pub(key2, pub2))
 {
 fprintf(stderr, "ec_to_pub() failed\n");
 EC_KEY_free(key);
-EC_KEY
+EC_KEY_free(key2);
+return (EXIT_FAILURE);
+}
+printf("Public key: ");
+_p
