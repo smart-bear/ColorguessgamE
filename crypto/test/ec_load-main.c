@@ -3,4 +3,4 @@
 
 #include <hblk_crypto.h>
 
-void _
+void _print_hex_buffer(uint8_t const *buf, size_t len);
