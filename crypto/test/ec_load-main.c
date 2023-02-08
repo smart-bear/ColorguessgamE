@@ -22,4 +22,10 @@ uint8_t pub[EC_PUB_LEN];
 if (ac < 2)
 {
 fprintf(stderr, "Usage: %s <path>\n", av[0]);
-return (E
+return (EXIT_FAILURE);
+}
+
+key = ec_create();
+ec_to_pub(key, pub);
+
+printf("Public key: ");
