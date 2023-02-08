@@ -17,4 +17,9 @@ int main(int ac, char **av)
 {
 EC_KEY *key;
 EC_KEY *key2;
-uint8_t pub[EC_PUB_LE
+uint8_t pub[EC_PUB_LEN];
+
+if (ac < 2)
+{
+fprintf(stderr, "Usage: %s <path>\n", av[0]);
+return (E
