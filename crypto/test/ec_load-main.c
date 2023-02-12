@@ -31,3 +31,8 @@ ec_to_pub(key, pub);
 printf("Public key: ");
 _print_hex_buffer(pub, EC_PUB_LEN);
 printf("\n");
+
+ec_save(key, av[1]);
+
+    /* Test `ec_load()` */
+key2 = 
