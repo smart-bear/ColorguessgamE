@@ -35,4 +35,7 @@ printf("\n");
 ec_save(key, av[1]);
 
     /* Test `ec_load()` */
-key2 = 
+key2 = ec_load(av[1]);
+ec_to_pub(key2, pub);
+
+printf("Pub
