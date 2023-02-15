@@ -38,4 +38,6 @@ ec_save(key, av[1]);
 key2 = ec_load(av[1]);
 ec_to_pub(key2, pub);
 
-printf("Pub
+printf("Public key: ");
+_print_hex_buffer(pub, EC_PUB_LEN);
+printf("
