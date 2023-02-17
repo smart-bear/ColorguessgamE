@@ -40,4 +40,10 @@ ec_to_pub(key2, pub);
 
 printf("Public key: ");
 _print_hex_buffer(pub, EC_PUB_LEN);
-printf("
+printf("\n");
+
+    /* Cleanup */
+EC_KEY_free(key);
+EC_KEY_free(key2);
+
+return (E
