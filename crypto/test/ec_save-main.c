@@ -1,2 +1,6 @@
 #include <stdlib.h>
-#include 
+#include <stdio.h>
+
+#include "hblk_crypto.h"
+
+void _print_hex_buffer(uint8_t co
