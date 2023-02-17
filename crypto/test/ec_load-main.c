@@ -46,4 +46,6 @@ printf("\n");
 EC_KEY_free(key);
 EC_KEY_free(key2);
 
-return (E
+return (EXIT_SUCCESS);
+}
+
