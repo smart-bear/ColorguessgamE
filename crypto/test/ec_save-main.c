@@ -13,4 +13,11 @@ void _print_hex_buffer(uint8_t const *buf, size_t len);
  *
  * Return: EXIT_SUCCESS or EXIT_FAILURE
  */
-int main(int ac, char *
+int main(int ac, char **av)
+{
+EC_KEY *key;
+uint8_t pub[EC_PUB_LEN];
+
+if (ac < 2)
+{
+fprintf(stderr, 
