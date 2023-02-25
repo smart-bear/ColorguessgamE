@@ -20,4 +20,8 @@ uint8_t pub[EC_PUB_LEN];
 
 if (ac < 2)
 {
-fprintf(stderr, 
+fprintf(stderr, "Usage: %s <path>\n", av[0]);
+return (EXIT_FAILURE);
+}
+
+key = ec_crea
