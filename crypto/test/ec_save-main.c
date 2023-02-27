@@ -28,4 +28,7 @@ key = ec_create();
 ec_to_pub(key, pub);
 
 printf("Public key: ");
-_print_h
+_print_hex_buffer(pub, EC_PUB_LEN);
+printf("\n");
+
+    /* Test `ec_save()` */
