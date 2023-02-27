@@ -24,4 +24,8 @@ fprintf(stderr, "Usage: %s <path>\n", av[0]);
 return (EXIT_FAILURE);
 }
 
-key = ec_crea
+key = ec_create();
+ec_to_pub(key, pub);
+
+printf("Public key: ");
+_print_h
