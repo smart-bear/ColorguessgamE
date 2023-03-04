@@ -32,3 +32,7 @@ _print_hex_buffer(pub, EC_PUB_LEN);
 printf("\n");
 
     /* Test `ec_save()` */
+ec_save(key, av[1]);
+
+    /* Cleanup */
+EC_KEY_free(k
