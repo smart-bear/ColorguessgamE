@@ -35,4 +35,8 @@ printf("\n");
 ec_save(key, av[1]);
 
     /* Cleanup */
-EC_KEY_free(k
+EC_KEY_free(key);
+
+return (EXIT_SUCCESS);
+}
+
