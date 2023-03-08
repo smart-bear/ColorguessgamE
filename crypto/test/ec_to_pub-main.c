@@ -13,4 +13,7 @@ void _print_hex_buffer(uint8_t const *buf, size_t len);
 int main(void)
 {
     EC_KEY *key;
-    uint
+    uint8_t pub[EC_PUB_LEN];
+    uint8_t *test_ptr;
+
+    /* Prerequisites
