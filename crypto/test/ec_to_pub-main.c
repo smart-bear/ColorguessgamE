@@ -16,4 +16,8 @@ int main(void)
     uint8_t pub[EC_PUB_LEN];
     uint8_t *test_ptr;
 
-    /* Prerequisites
+    /* Prerequisites */
+    key = ec_create();
+    if (!key)
+    {
+        fpri
