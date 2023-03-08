@@ -20,4 +20,5 @@ int main(void)
     key = ec_create();
     if (!key)
     {
-        fpri
+        fprintf(stderr, "ec_create() failed\n");
+        return (EXIT_FAILURE);
