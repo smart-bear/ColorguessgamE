@@ -25,4 +25,6 @@ int main(void)
     }
     printf("Successfully created EC key pair\n");
 
-    /
+    /* Test `ec_to_pub()` */
+    test_ptr = ec_to_pub(key, pub);
+   
