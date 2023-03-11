@@ -22,3 +22,7 @@ int main(void)
     {
         fprintf(stderr, "ec_create() failed\n");
         return (EXIT_FAILURE);
+    }
+    printf("Successfully created EC key pair\n");
+
+    /
