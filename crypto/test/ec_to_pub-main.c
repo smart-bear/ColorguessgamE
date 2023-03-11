@@ -36,4 +36,8 @@ int main(void)
     if (test_ptr != pub)
     {
         fprintf(stderr, "Return value and pointer differ\n");
-        EC_KEY_free
+        EC_KEY_free(key);
+        return (EXIT_FAILURE);
+    }
+
+    printf
