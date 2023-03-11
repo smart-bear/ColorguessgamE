@@ -29,4 +29,7 @@ int main(void)
     test_ptr = ec_to_pub(key, pub);
     if (!test_ptr)
     {
-        fprintf(stderr, "ec_to_pub() failed
+        fprintf(stderr, "ec_to_pub() failed\n");
+        EC_KEY_free(key);
+        return (EXIT_FAILURE);
+    }
