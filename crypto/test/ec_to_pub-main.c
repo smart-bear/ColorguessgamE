@@ -35,4 +35,5 @@ int main(void)
     }
     if (test_ptr != pub)
     {
-        fprintf(stderr, "Retu
+        fprintf(stderr, "Return value and pointer differ\n");
+        EC_KEY_free
