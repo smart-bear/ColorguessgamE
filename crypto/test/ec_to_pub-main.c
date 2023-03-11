@@ -27,4 +27,6 @@ int main(void)
 
     /* Test `ec_to_pub()` */
     test_ptr = ec_to_pub(key, pub);
-   
+    if (!test_ptr)
+    {
+        fprintf(stderr, "ec_to_pub() failed
