@@ -33,3 +33,6 @@ int main(void)
         EC_KEY_free(key);
         return (EXIT_FAILURE);
     }
+    if (test_ptr != pub)
+    {
+        fprintf(stderr, "Retu
