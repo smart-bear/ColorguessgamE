@@ -42,4 +42,10 @@ int main(void)
 
     printf("Public key: ");
     _print_hex_buffer(pub, EC_PUB_LEN);
-    printf("\n"
+    printf("\n");
+
+    /* Cleanup */
+    EC_KEY_free(key);
+
+    return (EXIT_SUCCESS);
+}
