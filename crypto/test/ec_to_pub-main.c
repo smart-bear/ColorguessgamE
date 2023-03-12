@@ -40,4 +40,6 @@ int main(void)
         return (EXIT_FAILURE);
     }
 
-    printf
+    printf("Public key: ");
+    _print_hex_buffer(pub, EC_PUB_LEN);
+    printf("\n"
