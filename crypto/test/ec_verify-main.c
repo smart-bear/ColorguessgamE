@@ -13,4 +13,6 @@ void _print_hex_buffer(uint8_t const *buf, size_t len);
  *
  * Return: EXIT_SUCCESS or EXIT_FAILURE
  */
-static int test
+static int test_ec_sign(EC_KEY const *key)
+{
+uint8_t const str[] = "H
