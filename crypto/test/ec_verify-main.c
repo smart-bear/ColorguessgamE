@@ -18,4 +18,7 @@ static int test_ec_sign(EC_KEY const *key)
 uint8_t const str[] = "Holberton";
 sig_t sig;
 
-if (!ec_sign(key, str, strlen((char *)str),
+if (!ec_sign(key, str, strlen((char *)str), &sig))
+{
+fprintf(stderr, "ec_sign() failed\n");
+return (EXIT_FAIL
