@@ -21,4 +21,7 @@ sig_t sig;
 if (!ec_sign(key, str, strlen((char *)str), &sig))
 {
 fprintf(stderr, "ec_sign() failed\n");
-return (EXIT_FAIL
+return (EXIT_FAILURE);
+}
+printf("Signature of \"%s\": ", str);
+_print_hex_buffer(si
