@@ -27,4 +27,7 @@ printf("Signature of \"%s\": ", str);
 _print_hex_buffer(sig.sig, sig.len);
 printf("\n");
 
-if (!ec_verify(key, str, st
+if (!ec_verify(key, str, strlen((char *)str), &sig))
+{
+fprintf(stderr, "ec_verify() failed\n");
+return
