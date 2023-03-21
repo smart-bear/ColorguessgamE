@@ -40,4 +40,8 @@ return (EXIT_SUCCESS);
 /**
  * main - Entry point
  *
- * Return: EXIT_
+ * Return: EXIT_SUCCESS or EXIT_FAILURE
+ */
+int main(void)
+{
+EC_KEY 
