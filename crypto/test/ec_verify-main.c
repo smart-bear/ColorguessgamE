@@ -34,4 +34,10 @@ return (EXIT_FAILURE);
 }
 printf("Signature verified\n");
 
-retu
+return (EXIT_SUCCESS);
+}
+
+/**
+ * main - Entry point
+ *
+ * Return: EXIT_
