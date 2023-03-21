@@ -30,4 +30,8 @@ printf("\n");
 if (!ec_verify(key, str, strlen((char *)str), &sig))
 {
 fprintf(stderr, "ec_verify() failed\n");
-return
+return (EXIT_FAILURE);
+}
+printf("Signature verified\n");
+
+retu
