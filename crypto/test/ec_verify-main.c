@@ -44,4 +44,7 @@ return (EXIT_SUCCESS);
  */
 int main(void)
 {
-EC_KEY 
+EC_KEY *key;
+
+    /* Prerequisites */
+key = ec_create
