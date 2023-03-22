@@ -47,4 +47,8 @@ int main(void)
 EC_KEY *key;
 
     /* Prerequisites */
-key = ec_create
+key = ec_create();
+if (!key)
+{
+fprintf(stderr, "ec_create() failed\n");
+return (
