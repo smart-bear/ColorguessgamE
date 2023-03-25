@@ -51,4 +51,8 @@ key = ec_create();
 if (!key)
 {
 fprintf(stderr, "ec_create() failed\n");
-return (
+return (EXIT_FAILURE);
+}
+printf("Successfully created EC key pair\n");
+
+    
