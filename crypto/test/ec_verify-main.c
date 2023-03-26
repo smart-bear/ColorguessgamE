@@ -61,4 +61,7 @@ if (test_ec_sign(key) != EXIT_SUCCESS)
 EC_KEY_free(key);
 return (EXIT_FAILURE);
 }
-if (test
+if (test_ec_sign(key) != EXIT_SUCCESS)
+{
+EC_KEY_free(key);
+return (EXIT_FAI
