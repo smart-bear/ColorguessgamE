@@ -70,4 +70,6 @@ return (EXIT_FAILURE);
     /* Cleanup */
 EC_KEY_free(key);
 
-return (EXIT_
+return (EXIT_SUCCESS);
+}
+
